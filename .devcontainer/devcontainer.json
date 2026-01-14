@@ -1,4 +1,13 @@
 {
-  "name": "Universal - Latest",
-  "image": "mcr.microsoft.com/devcontainers/universal:latest"
+   "name": "Python 3",
+   "image": "mcr.microsoft.com/devcontainers/python:3",
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "ms-python.python",
+            "ms-python.debugpy"
+         ]
+      }
+   },
+   "postCreateCommand": "bash .devcontainer/postCreate.sh"
 }
